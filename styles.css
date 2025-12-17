@@ -1,110 +1,254 @@
-/* RESET */
+/* ===== RESET BÁSICO ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* GLOBAL */
+/* ===== GLOBAL ===== */
 body {
-  font-family: "Times New Roman", serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.4;      /* antes 100% */
-  color: #000000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #111827;
   background-color: #ffffff;
 }
 
-/* PÁRRAFOS */
-p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.4;
-  margin-bottom: 16px;    /* un poco más de espacio */
+img {
+  max-width: 100%;
+  display: block;
 }
 
-/* HEADER */
-header {
-  background-color: #f0f0f0;
-  margin-bottom: 20px;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 1px solid #ccc;
+/* ===== HEADER ===== */
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 48px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #ffffff;
 }
 
-/* FOOTER */
-footer {
-  background-color: #f0f0f0;
-  padding: 20px;
-  text-align: center;
-  border-top: 1px solid #ccc;
-  margin-top: 40px;
+.logo img {
+  height: 32px;
 }
 
-/* CONTENEDOR PRINCIPAL */
-.content {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 40px 32px 32px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #fff;
-  box-sizing: border-box;
+/* navegación centrada */
+.main-nav {
+  display: flex;
+  gap: 32px;
+  flex: 1;
+  justify-content: center;
 }
-/* TITULO PRINCIPAL (Quienes somos) */
-h1 {
-  font-family: "Times New Roman", serif;
+
+.nav-item {
+  text-decoration: none;
+  color: #111827;
+  font-size: 14px;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.cart-link img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ===== SECCIÓN CATEGORÍAS ===== */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 48px 80px;
+}
+
+/* título */
+#categories h1 {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 16px;
-  line-height: 1.2;
+  margin-bottom: 12px;
 }
 
-/* SUBTÍTULOS (Nuestra Historia, Nuestra Misión, etc.) */
-h2 {
-  font-family: "Times New Roman", serif;
-  font-size: 24px;
-  font-weight: 700;
-  margin-top: 24px;
-  margin-bottom: 8px;
-  line-height: 1.2;
+/* texto introductorio */
+#categories > p {
+  max-width: 600px;
+  color: #4b5563;
+  line-height: 1.5;
+  margin-bottom: 40px;
 }
 
-/* LISTAS DE VALORES */
-ul {
-  margin-left: 24px;
-  margin-bottom: 16px;
-}
-
-li {
-  margin-bottom: 6px;
-}
-
-/* ENLACES (nuestro catálogo…) */
-a {
-  color: #0056d6;
-  text-decoration: underline;
-}
-/* NAVEGACIÓN */
-
-nav {
-  margin-top: 12px;
-}
-
-nav ul {
-  list-style: none;
+/* grilla */
+.categories-grid {
   display: flex;
-  gap: 16px;
-  justify-content: center;
-  padding: 0;
+  gap: 24px;
 }
 
-nav a {
-  text-decoration: none;
-  color: #333;
+/* tarjeta individual */
+.category {
+  flex: 0 0 384px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* imagen */
+.category img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 16px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+/* título de categoría */
+.title-category {
   font-weight: 600;
+  margin-bottom: 4px;
 }
 
-nav a:hover {
-  text-decoration: underline;
+/* descripción */
+.category p {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.4;
+}
+
+/* ===== HERO ===== */
+
+.hero-section {
+  width: 100%;
+  min-height: 784px; /* altura exacta según Figma */
+  background-image: url("../imagenes/Hero.png");
+  background-size: cover;      /* Fill */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* overlay oscuro */
+.hero-overlay {
+  min-height: 784px;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% como en Figma */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+/* contenido centrado */
+.hero-content {
+  max-width: 344px; /* ancho del bloque de texto según Figma */
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* título */
+.hero-content h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: white;
+}
+
+/* texto */
+.hero-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+}
+
+/* botón */
+.hero-button {
+  align-self: center;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #111827;
+  font-weight: 600;
+  text-decoration: none;
+}
+/* TABLET: <= 64rem (1024px) */
+@media screen and (max-width: 64rem) {
+  main {
+    padding: 40px 24px 64px;
+  }
+
+  .categories-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .category {
+    flex: 0 0 calc(50% - 12px);
+  }
+}
+
+/* MOBILE: <= 40rem (640px) */
+@media screen and (max-width: 40rem) {
+  .site-header {
+    padding: 16px;
+  }
+
+  .main-nav {
+    gap: 16px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  main {
+    padding: 32px 16px 48px;
+  }
+
+  .categories-grid {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .category {
+    flex: 1 1 auto;
+  }
+
+  .hero-overlay {
+    padding: 32px 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 64rem) {
+  .hero-content {
+    max-width: 520px;
+  }
+}
+@media screen and (max-width: 40rem) {
+  .hero-section,
+  .hero-overlay {
+    min-height: 520px; /* evita el 784px en celular */
+  }
+
+  .hero-overlay {
+    padding: 24px 16px;
+  }
+
+  .hero-content {
+    max-width: 320px;
+    gap: 12px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .hero-button {
+    padding: 10px 14px;
+  }
 }
