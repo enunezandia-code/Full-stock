@@ -11,8 +11,30 @@
     />
   </head>
   <body>
-    <header>Header</header>
-    <main>
+           <!-- HEADER -->
+    <header class="site-header">
+      <!-- Logo -->
+    <a href="./index.html" class="logo">
+<img src="../imagenes/logo-full-stock.png" alt="Full Stock" />
+</a>
+
+      <!-- Navegación -->
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#" class="nav-item">Polos</a>
+        <a href="#" class="nav-item">Tazas</a>
+        <a href="#" class="nav-item">Stickers</a>
+      </nav>
+
+      <!-- Carrito -->
+      <a
+        href="cart.html"
+        class="cart-link"
+        aria-label="Ver carrito de compras"
+      >
+        <img src="../imagenes/cart.svg" alt="Carrito de compras" />
+      </a>
+    </header>
+        <main>
       <div class="content about-content">
         <h1 class="title">Quienes Somos</h1>
         <p>
@@ -75,6 +97,62 @@
         </p>
       </div>
     </main>
-    <footer>Footer</footer>
+  <!-- FOOTER -->
+
+    <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-columns">
+      <section class="footer-col" aria-label="Tienda">
+        <h2 class="footer-title">Tienda</h2>
+        <ul class="footer-links">
+          <li><a href="#">Polos</a></li>
+          <li><a href="#">Tazas</a></li>
+          <li><a href="#">Stickers</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-col" aria-label="Compañía">
+        <h2 class="footer-title">Compañía</h2>
+        <ul class="footer-links">
+          <li><a href="./about.html">Quienes somos</a></li>
+          <li><a href="./terms.html">Términos y condiciones</a></li>
+          <li><a href="./privacy.html">Privacidad</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-col" aria-label="Conecta">
+        <h2 class="footer-title">Conecta</h2>
+        <ul class="footer-links">
+          <li><a href="#" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-col footer-newsletter" aria-label="Boletín">
+        <h2 class="footer-title">Suscríbete a nuestro boletín</h2>
+        <p class="footer-text">
+          Recibe las últimas ofertas y descuentos en tu correo semanalmente.
+        </p>
+
+        <form class="newsletter-form" action="#" method="post">
+          <label for="newsletter-email" class="sr-only">Correo electrónico</label>
+          <input
+            type="email"
+            id="newsletter-email"
+            name="email"
+            placeholder="ejemplo@correo.com"
+            required
+          />
+          <button type="submit">Suscribirse</button>
+        </form>
+      </section>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Todos los derechos reservados © Full Stock</p>
+     </div>
+      </div>
+    </footer>
   </body>
 </html>
