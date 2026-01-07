@@ -15,6 +15,8 @@
 /* 3. COMPONENTS */
 /* ============================= */
 @import url("3_components/category.css");
+@import url("3_components/quality-promise.css");
+@import url("3_components/quality-item.css");
 
 /* ============================= */
 /* 4. UTILITIES */

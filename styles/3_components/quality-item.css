@@ -1,0 +1,42 @@
+.quality-item {
+  text-align: center;
+  max-width: 26rem;
+  margin: 0 auto;
+}
+
+.quality-item__icon {
+  width: 3.875rem;
+  height: 3rem;
+  object-fit: contain;
+  margin: 0 auto 0.75rem;
+}
+
+.quality-item__title {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 0.5rem;
+}
+
+.quality-item__text {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--muted-foreground);
+}
+
+/* >= 640px */
+@media (min-width: 40rem) {
+  .quality-item {
+    flex: 1 1 17.5rem;
+    max-width: 20rem;
+  }
+}
+
+/* >= 1024px */
+@media (min-width: 64rem) {
+  .quality-item {
+    flex: 0 0 18rem;
+    max-width: 18rem;
+  }
+}
