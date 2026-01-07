@@ -1,194 +1,199 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Full Stock</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+  <!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Full Stock</title>
+      <link rel="stylesheet" href="styles/index.css" />
+    </head>
 
-  <body>
-    <!-- HEADER -->
-    <header class="site-header">
-      <!-- Logo -->
-    <a href="./index.html" class="logo">
-  <img src="../imagenes/logo-full-stock.png" alt="Full Stock" />
-</a>
+    <body>
+      <!-- HEADER -->
+      <header class="site-header">
+        <!-- Logo -->
+      <a href="./index.html" class="logo">
+    <img src="../imagenes/logo-full-stock.png" alt="Full Stock" />
+  </a>
 
-      <!-- Navegación -->
-      <nav class="main-nav" aria-label="Navegación principal">
-        <a href="#" class="nav-item">Polos</a>
-        <a href="#" class="nav-item">Tazas</a>
-        <a href="#" class="nav-item">Stickers</a>
-      </nav>
+        <!-- Navegación -->
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a href="#" class="nav-item">Polos</a>
+          <a href="#" class="nav-item">Tazas</a>
+          <a href="#" class="nav-item">Stickers</a>
+        </nav>
 
-      <!-- Carrito -->
-      <a
-        href="cart.html"
-        class="cart-link"
-        aria-label="Ver carrito de compras"
-      >
-        <img src="../imagenes/cart.svg" alt="Carrito de compras" />
-      </a>
-    </header>
+        <!-- Carrito -->
+        <a
+          href="cart.html"
+          class="cart-link"
+          aria-label="Ver carrito de compras"
+        >
+          <img src="../imagenes/cart.svg" alt="Carrito de compras" />
+        </a>
+      </header>
 
-        <!-- HERO  -->
-    <section class="hero-section">
-      <div class="hero-overlay">
-        <div class="hero-content">
-          <h1>Nuevos productos disponibles</h1>
-          <p>
-            Un pequeño lote de increíbles productos acaba de llegar. Agrega tus
-            favoritos al carrito antes que se agoten.
-          </p>
-          <a href="#" class="hero-button">Compra ahora</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTENIDO -->
-    <main>
-        <section id="categories">
-        <h1>Compra por categoría</h1>
-        <p>
-          Explora nuestra selección de productos especialmente diseñados para
-          desarrolladores web. Encuentra lo que buscas navegando por nuestras
-          categorías de polos, tazas, stickers y más.
-        </p>
-
-        <div class="categories-grid">
-          <!-- Polos -->
-          <article class="category">
-            <div class="category-image">
-              <img src="../imagenes/categoria-polos.jpg" alt="Polos" />
-            </div>
-            <p class="title-category">Polos</p>
+          <!-- HERO  -->
+      <section class="hero-section">
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <h1>Nuevos productos disponibles</h1>
             <p>
-              Polos exclusivos con diseños que todo desarrollador querrá lucir.
-              Ideales para llevar el código a donde vayas.
+              Un pequeño lote de increíbles productos acaba de llegar. Agrega tus
+              favoritos al carrito antes que se agoten.
             </p>
-          </article>
-
-          <!-- Tazas -->
-          <article class="category">
-            <div class="category-image">
-              <img src="../imagenes/categoria-tazas.jpg" alt="Tazas" />
-            </div>
-            <p class="title-category">Tazas</p>
-            <p>
-              Tazas que combinan perfectamente con tu café matutino y tu pasión
-              por la programación. ¡Empieza el día con estilo!
-            </p>
-          </article>
-
-          <!-- Stickers -->
-          <article class="category">
-            <div class="category-image">
-              <img src="../imagenes/categoria-stickers.jpg" alt="Stickers" />
-            </div>
-            <p class="title-category">Stickers</p>
-            <p>
-              Personaliza tu espacio de trabajo con nuestros stickers únicos y
-              muestra tu amor por el desarrollo web.
-            </p>
-          </article>
+            <a href="#" class="hero-button">Compra ahora</a>
+          </div>
         </div>
       </section>
-    </main>
-<section class="quality" aria-labelledby="quality-title">
-  <h2 id="quality-title" class="quality-title">Nuestra Promesa de Calidad</h2>
 
-  <div class="quality-grid">
-    <article class="quality-item">
-      <img src="../imagenes/camion.png" alt="" class="quality-icon" />
-      <h3 class="quality-item-title">Entrega rápida</h3>
-      <p class="quality-item-text">
-        Recibe tus productos en tiempo récord, directo a tu puerta, para que puedas disfrutar de ellos cuanto antes.
-      </p>
-    </article>
+      <!-- CONTENIDO -->
+      <main>
+          <section id="categories">
+  <div class="container">
+    <h1>Compra por categoría</h1>
+    <p>
+      Explora nuestra selección de productos especialmente diseñados para
+      desarrolladores web. Encuentra lo que buscas navegando por nuestras
+      categorías de polos, tazas, stickers y más.
+    </p>
 
-    <article class="quality-item">
-      <img src="../imagenes/polo.png" alt="" class="quality-icon" />
-      <h3 class="quality-item-title">Satisfacción Garantizada</h3>
-      <p class="quality-item-text">
-        Tu felicidad es nuestra prioridad. Si no estás 100% satisfecho, estamos aquí para ayudarte con cambios o devoluciones.
-      </p>
-    </article>
+    <div class="categories-grid">
+      <a href="#" class="category">
+        <div class="category__image">
+          <img src="../imagenes/categoria-polos.jpg" alt="Polos" />
+        </div>
+        <div>
+          <h3 class="category__title">Polos</h3>
+          <p class="category__description">
+            Polos exclusivos con diseños que todo desarrollador querrá lucir.
+            Ideales para llevar el código a donde vayas.
+          </p>
+        </div>
+      </a>
 
-    <article class="quality-item">
-      <img src="../imagenes/medalla.png" alt="" class="quality-icon" />
-      <h3 class="quality-item-title">Materiales de Alta Calidad</h3>
-      <p class="quality-item-text">
-        Nos aseguramos de que todos nuestros productos estén hechos con materiales de la más alta calidad.
-      </p>
-    </article>
+      <a href="#" class="category">
+        <div class="category__image">
+          <img src="../imagenes/categoria-tazas.jpg" alt="Tazas" />
+        </div>
+        <div>
+          <h3 class="category__title">Tazas</h3>
+          <p class="category__description">
+            Tazas que combinan perfectamente con tu café matutino y tu pasión
+            por la programación. ¡Empieza el día con estilo!
+          </p>
+        </div>
+      </a>
 
-    <article class="quality-item">
-      <img src="../imagenes/foco.png" alt="" class="quality-icon" />
-      <h3 class="quality-item-title">Diseños Exclusivos</h3>
-      <p class="quality-item-text">
-        Cada producto está diseñado pensando en los desarrolladores, con estilos únicos que no encontrarás en ningún otro lugar.
-      </p>
-    </article>
+      <a href="#" class="category">
+        <div class="category__image">
+          <img src="../imagenes/categoria-stickers.jpg" alt="Stickers" />
+        </div>
+        <div>
+          <h3 class="category__title">Stickers</h3>
+          <p class="category__description">
+            Personaliza tu espacio de trabajo con nuestros stickers únicos y
+            muestra tu amor por el desarrollo web.
+          </p>
+        </div>
+      </a>
+    </div>
   </div>
 </section>
+      <section class="quality" aria-labelledby="quality-title">
+    <h2 id="quality-title" class="quality-title">Nuestra Promesa de Calidad</h2>
 
-  <!-- FOOTER -->
-
-    <footer class="site-footer">
-  <div class="footer-content">
-    <div class="footer-columns">
-      <section class="footer-col" aria-label="Tienda">
-        <h2 class="footer-title">Tienda</h2>
-        <ul class="footer-links">
-          <li><a href="#">Polos</a></li>
-          <li><a href="#">Tazas</a></li>
-          <li><a href="#">Stickers</a></li>
-        </ul>
-      </section>
-
-      <section class="footer-col" aria-label="Compañía">
-        <h2 class="footer-title">Compañía</h2>
-        <ul class="footer-links">
-          <li><a href="./about.html">Quienes somos</a></li>
-          <li><a href="./terms.html">Términos y condiciones</a></li>
-          <li><a href="./privacy.html">Privacidad</a></li>
-        </ul>
-      </section>
-
-      <section class="footer-col" aria-label="Conecta">
-        <h2 class="footer-title">Conecta</h2>
-        <ul class="footer-links">
-          <li><a href="#" target="_blank" rel="noopener">WhatsApp</a></li>
-          <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
-          <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
-        </ul>
-      </section>
-
-      <section class="footer-col footer-newsletter" aria-label="Boletín">
-        <h2 class="footer-title">Suscríbete a nuestro boletín</h2>
-        <p class="footer-text">
-          Recibe las últimas ofertas y descuentos en tu correo semanalmente.
+    <div class="quality-grid">
+      <article class="quality-item">
+        <img src="../imagenes/camion.png" alt="" class="quality-icon" />
+        <h3 class="quality-item-title">Entrega rápida</h3>
+        <p class="quality-item-text">
+          Recibe tus productos en tiempo récord, directo a tu puerta, para que puedas disfrutar de ellos cuanto antes.
         </p>
+      </article>
 
-        <form class="newsletter-form" action="#" method="post">
-          <label for="newsletter-email" class="sr-only">Correo electrónico</label>
-          <input
-            type="email"
-            id="newsletter-email"
-            name="email"
-            placeholder="ejemplo@correo.com"
-            required
-          />
-          <button type="submit">Suscribirse</button>
-        </form>
-      </section>
+      <article class="quality-item">
+        <img src="../imagenes/polo.png" alt="" class="quality-icon" />
+        <h3 class="quality-item-title">Satisfacción Garantizada</h3>
+        <p class="quality-item-text">
+          Tu felicidad es nuestra prioridad. Si no estás 100% satisfecho, estamos aquí para ayudarte con cambios o devoluciones.
+        </p>
+      </article>
+
+      <article class="quality-item">
+        <img src="../imagenes/medalla.png" alt="" class="quality-icon" />
+        <h3 class="quality-item-title">Materiales de Alta Calidad</h3>
+        <p class="quality-item-text">
+          Nos aseguramos de que todos nuestros productos estén hechos con materiales de la más alta calidad.
+        </p>
+      </article>
+
+      <article class="quality-item">
+        <img src="../imagenes/foco.png" alt="" class="quality-icon" />
+        <h3 class="quality-item-title">Diseños Exclusivos</h3>
+        <p class="quality-item-text">
+          Cada producto está diseñado pensando en los desarrolladores, con estilos únicos que no encontrarás en ningún otro lugar.
+        </p>
+      </article>
     </div>
+  </section>
+  </main>
 
-    <div class="footer-bottom">
-      <p>Todos los derechos reservados © Full Stock</p>
-     </div>
+    <!-- FOOTER -->
+
+      <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-columns">
+        <section class="footer-col" aria-label="Tienda">
+          <h2 class="footer-title">Tienda</h2>
+          <ul class="footer-links">
+            <li><a href="#">Polos</a></li>
+            <li><a href="#">Tazas</a></li>
+            <li><a href="#">Stickers</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-col" aria-label="Compañía">
+          <h2 class="footer-title">Compañía</h2>
+          <ul class="footer-links">
+            <li><a href="./about.html">Quienes somos</a></li>
+            <li><a href="./terms.html">Términos y condiciones</a></li>
+            <li><a href="./privacy.html">Privacidad</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-col" aria-label="Conecta">
+          <h2 class="footer-title">Conecta</h2>
+          <ul class="footer-links">
+            <li><a href="#" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-col footer-newsletter" aria-label="Boletín">
+          <h2 class="footer-title">Suscríbete a nuestro boletín</h2>
+          <p class="footer-text">
+            Recibe las últimas ofertas y descuentos en tu correo semanalmente.
+          </p>
+
+          <form class="newsletter-form" action="#" method="post">
+            <label for="newsletter-email" class="sr-only">Correo electrónico</label>
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="ejemplo@correo.com"
+              required
+            />
+            <button type="submit">Suscribirse</button>
+          </form>
+        </section>
       </div>
-    </footer>
-  </body>
-</html>
+
+      <div class="footer-bottom">
+        <p>Todos los derechos reservados © Full Stock</p>
+      </div>
+        </div>
+      </footer>
+    </body>
+  </html>

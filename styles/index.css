@@ -1,0 +1,22 @@
+/* ============================= */
+/* 1. FOUNDATION */
+/* ============================= */
+@import url("1_foundation/tokens.css");
+@import url("1_foundation/reset.css");
+@import url("1_foundation/global.css");
+
+/* ============================= */
+/* 2. LAYOUT */
+/* ============================= */
+@import url("2_layout/container.css");
+@import url("2_layout/categories-grid.css");
+
+/* ============================= */
+/* 3. COMPONENTS */
+/* ============================= */
+@import url("3_components/category.css");
+
+/* ============================= */
+/* 4. UTILITIES */
+/* ============================= */
+@import url("4_utilities/utilities.css");
